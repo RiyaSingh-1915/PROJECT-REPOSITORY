@@ -1,0 +1,95 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Gilroy';
+    box-sizing: border-box;
+}
+
+html,body{
+    width: 100%;
+    height: 100%;
+
+}
+
+#main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(76, 195, 157);
+    
+}
+
+#panel{
+    overflow: hidden;
+    width: 80%;
+    height: 80%;
+    background-color: rgb(255, 255, 255);
+    border-radius: 10px;
+}
+
+#ptop{
+    padding: 0 25%;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    height: 100px;
+    background-color: rgb(54, 96, 75);
+    
+}
+
+.elem{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.elem h2{
+    font-weight: 50;
+    font-size: 22px;
+}
+
+.box{
+    height: 40px;
+    width: 40px;
+    font-size: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    padding: 10px;
+    color: rgba(38, 82, 27, 0.885);
+    font-weight: 700;
+    background-color: aliceblue;
+    border-radius: 5px;
+}
+
+#pbtm{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;/* due to flex-wrap set as none(in default state) all elements try to gather in same row of pixels, by using flex-wrap : wrap all the extra elements goto next bottom row */
+    gap: 10px;
+    width: 100%;
+    height: calc(100% - 100px);
+    padding: 20px;
+}
+
+.bubble{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 45px;
+    height: 45px;
+    background-color: rgb(54, 96, 75);
+    color: #fff;
+    border-radius: 50%;
+    font-weight: 500;
+}
+
+.bubble:hover{
+    background-color: rgb(27, 64, 45);
+    cursor: pointer;
+}
